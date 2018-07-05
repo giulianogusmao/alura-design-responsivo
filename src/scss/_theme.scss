@@ -18,6 +18,10 @@ img {
   max-width: 1200px;
 }
 
+.logo img {
+  width: 200px;
+}
+
 .logo,
 .secao {
   padding: 0 1%;
@@ -87,7 +91,7 @@ html {
 
       transition: left 0.3s ease-out;
   }
-  
+
   .menu-ativo .barra-nav {
       left: 0;
   }
@@ -111,4 +115,38 @@ html {
   right: 0;
 
   background: rgba(0,0,0,0.4);
+}
+
+.menu-abrir,
+.menu-fechar {
+  background: none;
+  border: 0;
+  outline: 0;
+  font-size: 1.6em;
+  text-indent: -999em;
+}
+
+.menu-abrir {
+  height: 0;
+  width:.75em;
+  padding-top:.125em;
+  border-top: .375em double #000;
+  border-bottom: .125em solid #000;
+
+  vertical-align: middle;
+  margin: 0.5em;    
+}
+
+.menu-fechar {
+  position: relative;
+  height: 1em;
+  width: 1em;
+
+  &:before {
+    content: '\00D7';
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-indent: 0;
+  }
 }
