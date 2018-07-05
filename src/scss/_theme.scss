@@ -1,16 +1,11 @@
 
 /* ======================================================
-    Genericos
+    EXERCICIOS
 */
 
 
 img {
-    max-width: 100%;
-}
-
-.secao{
-  float: left;
-  width: 33%;
+  max-width: 100%;
 }
 
 .mini{
@@ -19,13 +14,13 @@ img {
 }
 
 .container{
-    margin: 0 auto;
-    max-width: 1200px;
+  margin: 0 auto;
+  max-width: 1200px;
 }
 
 .logo,
 .secao {
-    padding: 0 1%;
+  padding: 0 1%;
 }
 
 .logo,
@@ -48,3 +43,28 @@ header {
 .barra-nav {
     margin: 0.4em 0;
 }
+
+
+html {
+  @media (min-width: 600px) {
+    font-size: 1.125em;
+  }
+  
+  @media (min-width: 1000px) {
+    font-size: 1.25em;
+  }
+}
+
+.secao {
+  width: 100%;
+  
+  @media (min-width: 600px) {
+    width: 50%;
+  }
+
+  @media (min-width: 1000px) {
+    float: left;
+    width: 33.333%;
+  }
+}
+
